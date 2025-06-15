@@ -4,25 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
     body {
       font-family: 'Open Sans', sans-serif;
       max-width: 700px;
-      margin: auto;
       padding: 1rem;
-      background: #fff;
-      color: #000;
+      margin: auto;
+      background: #121212; /* dark background */
+      color: #e0e0e0;       /* light text */
     }
-
+  
+    h1, h2 {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-size: 160%;
+      color: #ffffff;
+    }
+  
+    a {
+      color: #90caf9;
+    }
+  
+    a:hover {
+      color: #bbdefb;
+    }
+  
     img {
       width: 70%;
+      margin: auto;
       display: block;
-      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* optional highlight */
     }
-
-    a {
-      display: block;
-      text-align: center;
+  
+    #footer {
       margin-top: 2rem;
+      color: #888;
+      font-size: 80%;
+    }
+  
+    li {
+      padding: 0;
+      margin: 0 0 0.8rem 0;
     }
   </style>
   <title>Full GIF Animation</title>
@@ -117,7 +142,7 @@
 			  'eigenvalue_animation_gifs/eigenvalue_animation23_1.gif',
 			  'eigenvalue_animation_gifs/eigenvalue_animation23_2.gif'
 		     ];
-             
+
     let current = 0;
     const img = document.getElementById('gif-display');
 
